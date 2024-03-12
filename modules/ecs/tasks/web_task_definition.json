@@ -80,6 +80,10 @@
         "value": "${input_queue_finished_sqs_url}"
       },
       {
+        "name": "AWS_OUTPUT_PAYMENT_STATUS_NOTIFICATION_URL",
+        "value": "${output_payment_status_notification_url}"
+      },
+      {
         "name": "MSG_POLLING_INTERVAL",
         "value": "${sqs_polling_interval}"
       },

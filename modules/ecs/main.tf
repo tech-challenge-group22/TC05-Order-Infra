@@ -46,6 +46,7 @@ resource "aws_ecs_task_definition" "web" {
     input_payment_queue_processed       = "${var.input_payment_queue_processed}"
     input_queue_finished_sqs_url       = "${var.input_queue_finished_sqs_url}"
     output_order_queue_received        = "${var.output_order_queue_received}"
+    output_payment_status_notification_url = "${var.output_payment_status_notification_url}"
     sqs_polling_interval = "${var.sqs_polling_interval}"
     sqs_message_group    = "${var.sqs_message_group}"
     secret_key_jwt_token = "${var.secret_key_jwt_token}"

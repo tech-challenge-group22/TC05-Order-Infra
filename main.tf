@@ -75,6 +75,7 @@ module "ecs" {
   rds_id              = "${module.rds.rds_id}"
   output_payment_queue_received  = "${module.sqs.output_payment_queue_received}"
   output_order_queue_received    = "${module.sqs.output_order_queue_received}"
+  output_payment_status_notification_url = "${module.sqs.output_payment_status_notification_url}"
   input_payment_queue_processed = "${var.input_payment_queue_processed}"
   input_queue_finished_sqs_url   = "${var.input_queue_finished_sqs_url}"
   sqs_message_group    = "${var.sqs_message_group}"
