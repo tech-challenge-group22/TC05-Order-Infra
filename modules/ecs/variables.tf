@@ -40,10 +40,6 @@ variable "database_name" {
   description = "The database that the app will use"
 }
 
-variable "repository_name" {
-  description = "The name of the repisitory"
-}
-
 variable "execution_arn_role" {
   description = "arn of execution role"
 }
@@ -90,4 +86,7 @@ variable secret_key_jwt_token {
 }
 
 variable "output_payment_status_notification_url" {
+}
+
+variable "ecr_url" {
 }
