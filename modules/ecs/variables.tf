@@ -64,16 +64,16 @@ variable "secret_aws" {
   description = "AWS session token"
 }
 
-variable "output_payment_queue_received" {
+variable "payment_queue_received" {
 }
 
-variable "input_payment_queue_processed" {
+variable "payment_queue_processed" {
 }
 
-variable "input_queue_finished_sqs_url" {
+variable "queue_finished_sqs_url" {
 }
 
-variable "output_order_queue_received" {
+variable "order_queue_received" {
 }
 
 variable sqs_polling_interval {
@@ -85,7 +85,7 @@ variable sqs_message_group {
 variable secret_key_jwt_token {
 }
 
-variable "output_payment_status_notification_url" {
+variable "payment_status_notification" {
 }
 
 variable "ecr_url" {

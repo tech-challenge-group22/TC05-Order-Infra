@@ -47,10 +47,6 @@ module dynamo {
   source = "./modules/dynamo"
 }
 
-module sqs {
-  source = "./modules/sqs"
-}
-
 module "ecr" {
   source = "./modules/ecr"
 }
@@ -77,11 +73,11 @@ module "ecs" {
   dbhost              = "${module.rds.rds_address}"
   execution_arn_role  = "${var.lab_role_arn}"
   rds_id              = "${module.rds.rds_id}"
-  output_payment_queue_received  = "${module.sqs.output_payment_queue_received}"
-  output_order_queue_received    = "${module.sqs.output_order_queue_received}"
-  output_payment_status_notification_url = "${module.sqs.output_payment_status_notification_url}"
-  input_payment_queue_processed = "${var.input_payment_queue_processed}"
-  input_queue_finished_sqs_url   = "${var.input_queue_finished_sqs_url}"
+  payment_queue_received  = "${var.payment_queue_received}"
+  order_queue_received    = "${var.order_queue_received}"
+  payment_status_notification = "${var.payment_status_notification}"
+  payment_queue_processed = "${var.payment_queue_processed}"
+  queue_finished_sqs_url   = "${var.queue_finished_sqs_url}"
   sqs_message_group    = "${var.sqs_message_group}"
   sqs_polling_interval = "${var.sqs_polling_interval}"
   secret_key_jwt_token = "${var.secret_key_jwt_token}"

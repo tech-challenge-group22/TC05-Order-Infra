@@ -65,23 +65,23 @@
       },
       {
         "name": "AWS_OUTPUT_PAYMENT_QUEUE_RECEIVED_URL",
-        "value": "${output_payment_queue_received}"
+        "value": "${payment_queue_received}"
       },
       {
         "name": "AWS_INPUT_PAYMENT_QUEUE_PROCESSED_URL",
-        "value": "${input_payment_queue_processed}"
+        "value": "${payment_queue_processed}"
       },
       {
         "name": "AWS_OUTPUT_ORDER_QUEUE_RECEIVED_URL",
-        "value": "${output_order_queue_received}"
+        "value": "${order_queue_received}"
       },
       {
         "name": "AWS_INPUT_ORDER_QUEUE_FINISHED_URL",
-        "value": "${input_queue_finished_sqs_url}"
+        "value": "${queue_finished_sqs_url}"
       },
       {
         "name": "AWS_OUTPUT_PAYMENT_STATUS_NOTIFICATION_URL",
-        "value": "${output_payment_status_notification_url}"
+        "value": "${payment_status_notification}"
       },
       {
         "name": "MSG_POLLING_INTERVAL",
