@@ -73,7 +73,7 @@
       },
       {
         "name": "AWS_OUTPUT_ORDER_QUEUE_RECEIVED_URL",
-        "value": "${order_queue_received}"
+        "value": "${order_received}"
       },
       {
         "name": "AWS_INPUT_ORDER_QUEUE_FINISHED_URL",

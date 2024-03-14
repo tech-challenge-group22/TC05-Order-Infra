@@ -71,7 +71,7 @@ module "ecs" {
   execution_arn_role  = "${var.lab_role_arn}"
   rds_id              = "${module.rds.rds_id}"
   payment_queue_received  = "${var.payment_queue_received}"
-  order_queue_received    = "${var.order_queue_received}"
+  order_received    = "${var.order_received}"
   payment_status_notification = "${var.payment_status_notification}"
   payment_queue_processed = "${var.payment_queue_processed}"
   queue_finished_sqs_url   = "${var.queue_finished_sqs_url}"

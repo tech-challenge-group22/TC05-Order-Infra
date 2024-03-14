@@ -73,7 +73,7 @@ variable "payment_queue_processed" {
 variable "queue_finished_sqs_url" {
 }
 
-variable "order_queue_received" {
+variable "order_received" {
 }
 
 variable sqs_polling_interval {

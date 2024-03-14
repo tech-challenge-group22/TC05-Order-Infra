@@ -52,7 +52,7 @@ variable "secret_key_jwt_token" {
 variable "payment_queue_received" {
 }
 
-variable "order_queue_received" {
+variable "order_received" {
 }
 
 variable "payment_status_notification" {
