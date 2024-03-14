@@ -37,7 +37,7 @@ resource "aws_ecs_task_definition" "web" {
     secret_aws = "${var.secret_aws}"
     payment_queue_received       = "${var.payment_queue_received}"
     payment_queue_processed       = "${var.payment_queue_processed}"
-    queue_finished_sqs_url       = "${var.queue_finished_sqs_url}"
+    queue_finished       = "${var.queue_finished}"
     order_received        = "${var.order_received}"
     payment_status_notification = "${var.payment_status_notification}"
     sqs_polling_interval = "${var.sqs_polling_interval}"

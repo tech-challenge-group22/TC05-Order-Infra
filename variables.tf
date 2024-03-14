@@ -37,7 +37,7 @@ variable "secret_aws" {
 variable "payment_queue_processed" {
 }
 
-variable "queue_finished_sqs_url" {
+variable "queue_finished" {
 }
 
 variable "sqs_message_group" {

@@ -77,7 +77,7 @@
       },
       {
         "name": "AWS_INPUT_ORDER_QUEUE_FINISHED_URL",
-        "value": "${queue_finished_sqs_url}"
+        "value": "${queue_finished}"
       },
       {
         "name": "AWS_OUTPUT_PAYMENT_STATUS_NOTIFICATION_URL",

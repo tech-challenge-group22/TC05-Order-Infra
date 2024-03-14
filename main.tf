@@ -74,7 +74,7 @@ module "ecs" {
   order_received    = "${var.order_received}"
   payment_status_notification = "${var.payment_status_notification}"
   payment_queue_processed = "${var.payment_queue_processed}"
-  queue_finished_sqs_url   = "${var.queue_finished_sqs_url}"
+  queue_finished   = "${var.queue_finished}"
   sqs_message_group    = "${var.sqs_message_group}"
   sqs_polling_interval = "${var.sqs_polling_interval}"
   secret_key_jwt_token = "${var.secret_key_jwt_token}"

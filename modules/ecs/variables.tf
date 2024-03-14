@@ -70,7 +70,7 @@ variable "payment_queue_received" {
 variable "payment_queue_processed" {
 }
 
-variable "queue_finished_sqs_url" {
+variable "queue_finished" {
 }
 
 variable "order_received" {
