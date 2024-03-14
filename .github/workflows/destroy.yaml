@@ -23,9 +23,9 @@ jobs:
       TF_VAR_access_key_aws: ${{ secrets.AWS_ACCESS_KEY_ID }}
       TF_VAR_secret_aws: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       TF_VAR_payment_queue_processed: ${{ vars.TF_VAR_PAYMENT_QUEUE_PROCESSED }}
-      TF_VAR_queue_finished_sqs_url: ${{ vars.TF_VAR_QUEUE_FINISHED_SQS_URL }}
+      TF_VAR_queue_finished: ${{ vars.TF_VAR_QUEUE_FINISHED }}
       TF_VAR_payment_queue_received: ${{ vars.TF_VAR_PAYMENT_QUEUE_RECEIVED }}
-      TF_VAR_order_queue_received: ${{ vars.TF_VAR_ORDER_QUEUE_RECEIVED }}
+      TF_VAR_order_received: ${{ vars.TF_VAR_ORDER_RECEIVED }}
       TF_VAR_payment_status_notification: ${{ vars.TF_VAR_PAYMENT_STATUS_NOTIFICATION }}
     steps:
       - name: Checkout Repo
